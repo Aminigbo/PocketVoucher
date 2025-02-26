@@ -1,8 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Image from "../assets/images/image (4).webp";
+import Image from "../assets/images/Vector.png";
 import { Colors } from "./colors";
+import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 function Header({ handleScroll, handleScroll1, handleScroll2 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -46,7 +49,9 @@ function Header({ handleScroll, handleScroll1, handleScroll2 }) {
     >
       <div className="flex items-center justify-between">
         <div className="ml-4 md:ml-20">
-          <img src={Image} alt="Logo" className="h-16 w-auto" />
+          <Link to="/">
+            <img src={Image} alt="Logo" className="h-11 w-auto" />
+          </Link>
         </div>
 
         <button
@@ -93,7 +98,7 @@ function Header({ handleScroll, handleScroll1, handleScroll2 }) {
                 onClick={() => handleNavigation(handleScroll2)}
                 className="text-black hover:text-red-400 block py-2 md:py-0 cursor-pointer"
               >
-                Monirates Features
+                Pocket Voucher Features
               </span>
             </li>
           </ul>
@@ -103,7 +108,7 @@ function Header({ handleScroll, handleScroll1, handleScroll2 }) {
             style={{ backgroundColor: Colors.primary }}
             className="text-white px-4 py-3 rounded-md w-full md:w-auto mt-4 md:mt-0"
           >
-            Get Started
+            Talk to us
           </button>
         </nav>
       </div>

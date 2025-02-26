@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Image from "../assets/images/modal-illustration.bfede9f5.svg";
@@ -11,6 +12,7 @@ function GetStarted() {
     name: "",
     email: "",
     phone: "",
+    text: "", // Correct key for the message
   });
 
   // Handle input changes
@@ -41,7 +43,7 @@ function GetStarted() {
     }, 3000);
 
     // Clear input fields after successful submission
-    setFormData({ name: "", email: "", phone: "" });
+    setFormData({ name: "", email: "", phone: "", text: "" });
   };
 
   return (
@@ -50,16 +52,13 @@ function GetStarted() {
       <div className="flex justify-center items-center mb-10 px-6 py-12">
         <div className="bg-white shadow-lg rounded-lg p-8 md:p-12 max-w-3xl w-full text-center">
           <div className="flex justify-center mb-6">
-            <img src={Image} alt="App Coming Soon" className="w-lg md:w-lg" />
+            <img src={Image} alt="App Coming Soon" className="w-28 md:w-28" />
           </div>
 
           <div className="mb-10 mt-10">
             <h1 className="text-3xl md:text-4xl font-bold mb-5 text-gray-900">
-              Our New App is on the Way 🚀
+              Let us have a chat!
             </h1>
-            <p className="text-lg text-gray-600 mt-2">
-              Join our VIP waitlist today!
-            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
@@ -84,8 +83,18 @@ function GetStarted() {
             <input
               type="tel"
               name="phone"
-              placeholder="Your phone number"
+              placeholder="Your phone number (optional)"
               value={formData.phone}
+              onChange={handleChange}
+              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
+              required
+            />
+            {/* Corrected `name` attribute */}
+            <input
+              type="text"
+              name="text" // Corrected from "message" to "text"
+              placeholder="Message"
+              value={formData.text}
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
               required
@@ -94,7 +103,7 @@ function GetStarted() {
               type="submit"
               className="w-52 bg-orange-400 text-white py-3 rounded-md font-semibold text-lg hover:bg-orange-500 transition"
             >
-              Join Now
+             Chat Now
             </button>
           </form>
         </div>
@@ -105,7 +114,7 @@ function GetStarted() {
         <div className="fixed top-0 z-50 right-6 bg-white shadow-lg rounded-lg p-4 flex items-center gap-3 border-l-4 border-green-600">
           <FaCheckCircle className="text-green-600 w-6 h-6" />
           <span className="text-gray-800 font-semibold">
-            Waitlist member added successfully 
+            Waitlist member added successfully
           </span>
           <div
             className="absolute bottom-0 left-0 w-full h-1 bg-green-400"

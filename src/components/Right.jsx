@@ -7,11 +7,10 @@ function Right() {
     <div className="w-full max-w-2xl px-4 sm:px-6 lg:px-8 py-10 mx-auto">
       <div className="text-center lg:text-left">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-cyan-950 mb-5">
-          Secure wallet for all your supported currency.
+          Add Merchant To Your Pocket Voucher Account
         </h1>
-        <p className="text-lg sm:text-xl text-gray-700 mb-6">
-          Easily receive funds to your wallet. You can create different wallets
-          for each supported currency.
+        <p className="text-lg sm:text-lg text-gray-700 mb-6">
+          Merchant vouchers can be used as means of payment for their products and services.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 bg-white p-5 rounded-lg shadow-sm mb-4">
@@ -20,11 +19,10 @@ function Right() {
         </div>
         <div className="text-center sm:text-left">
           <h4 className="text-xl sm:text-2xl font-semibold mb-2 text-cyan-950">
-            Fully Secured
+            Find Merchant
           </h4>
           <p className="text-gray-600 text-base sm:text-lg">
-            Your currency wallet is fully secure. Store your currencies with no
-            worries.
+            Select a merchant from our list of merchants and add to your account.
           </p>
         </div>
       </div>
@@ -34,11 +32,10 @@ function Right() {
         </div>
         <div className="text-center sm:text-left">
           <h4 className="text-xl sm:text-2xl font-semibold mb-2 text-cyan-950">
-            Multiple Options
+            Fund & Spend
           </h4>
           <p className="text-gray-600 text-base sm:text-lg">
-            Easily manage multiple currency wallets within a single account,
-            we've got you covered.
+            Fund your merchant wallet, create voucher tokens, share with friends and spend.
           </p>
         </div>
       </div>

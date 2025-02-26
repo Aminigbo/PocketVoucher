@@ -7,21 +7,21 @@ function Box() {
   const info = [
     {
       icon: <PiSquaresFourBold className="text-4xl text-pink-600 "  />,
-      title: "Create multi-currencies",
+      title: "Create merchant Voucher",
       scribe:
-        "View wallet, select and create your desired currency from a list of currencies",
+        "Vouchers are created in simple steps to enhance payments to the merchant",
     },
     {
       icon: <HiDocumentCurrencyEuro className="text-4xl text-gray-600 " />,
-      title: "Convert",
+      title: "Virtual & Physical Cards",
       scribe:
-        "Select your desired currency pairs for exchange, convert at the best rate",
+        "Owning physical and virtual USD & NGN cards has never been this easy",
     },
     {
       icon: <BsHandbagFill className="text-4xl text-green-500" />,
-      title: "Get Funded",
+      title: "Receive Fund",
       scribe:
-        "Receive funds in your selected currency wallet or external account",
+        "Receive funds in your selected currency",
     },
   ];
 
@@ -30,7 +30,7 @@ function Box() {
       {info.map((item, index) => (
         <div
           key={index}
-          className="bg-white p-6 shadow-lg flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2"
+          className="bg-white p-6 shadow-sm flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2"
         >
           <div className="mb-5 mt-5">{item.icon}</div>
           <h4 className="text-xl font-semibold text-cyan-950 mb-5">

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../assets/images/appstore.50df6f67.svg";
@@ -5,11 +6,12 @@ import Image2 from "../assets/images/googleplay.bc4400ce.svg";
 import Image3 from "../assets/images/Screenshot 2025-02-20 at 10.55.15 1.png";
 import { Colors } from "../components/colors";
 
+// eslint-disable-next-line react/prop-types
 function Features({ scrollRef1 }) {
   return (
     <main
       ref={scrollRef1}
-      className="pt-16 md:pt-24 pb-12 md:pb-10 lg:pb-10 lg:pt-24"
+      className="pt-16 md:pt-20 pb-12 md:pb-10 lg:pb-10 lg:pt-20"
       style={{ backgroundColor: Colors.background }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 mt-20 mb-20 items-center gap-10 max-w-7xl mx-auto px-6 lg:px-12">

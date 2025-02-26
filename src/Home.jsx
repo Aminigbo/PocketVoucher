@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Features from "./pages/Features.jsx";
@@ -7,6 +8,7 @@ import Security from "./pages/Security.jsx";
 import Payments from "./pages/Payments.jsx";
 import Foot from "./pages/Foot.jsx";
 import Header from "./components/Header.jsx";
+import FAQ from "./pages/FAQ.jsx";
 
 function Home() {
   const scrollRef = useRef(null);
@@ -69,6 +71,7 @@ function Home() {
         <HowItWorks scrollRef={scrollRef} />
         <Security scrollRef2={scrollRef2} />
         <Payments />
+        <FAQ />
       </main>
       <Foot />
     </div>

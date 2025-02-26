@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import Image from "../assets/images/Screenshot 2025-02-20 at 10.27.11.png";
+import Image from "../assets/images/Group 5975.png";
 import Right from "../components/Right";
 import { Colors } from "../components/colors";
 
+// eslint-disable-next-line react/prop-types
 function Security({ scrollRef2 }) {
   return (
     <div
@@ -13,7 +15,7 @@ function Security({ scrollRef2 }) {
         <img
           src={Image}
           alt="Security"
-          className="w-65 mr-30 max-w-sm md:max-w-md lg:max-w-lg"
+          className="w-full mr-30 max-w-sm md:max-w-md lg:max-w-80"
         />
       </div>
       <Right />
