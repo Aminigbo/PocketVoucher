@@ -11,7 +11,7 @@ function Security({ scrollRef2 }) {
       ref={scrollRef2}
       className="flex flex-col lg:flex-row items-center justify-around gap-8 px-6 py-10 lg:px-20 lg:py-16 "
     >
-      <div className="w-full ml-20 max-w-md lg:max-w-lg">
+      <div className="w-full ml-20 max-w-md lg:max-w-lg" data-aos="fade-right">
         <img
           src={Image}
           alt="Security"

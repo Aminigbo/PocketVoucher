@@ -16,7 +16,10 @@ function Features({ scrollRef1 }) {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 mt-20 mb-20 items-center gap-10 max-w-7xl mx-auto px-6 lg:px-12">
         {/* Left Text Content */}
-        <div className="text-center md:text-left space-y-6">
+        <div
+          className="text-center md:text-left space-y-6"
+          data-aos="fade-right"
+        >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-950 leading-tight">
             Connecting Africa Through Payment
           </h1>
@@ -46,7 +49,10 @@ function Features({ scrollRef1 }) {
         </div>
 
         {/* Right Image Content */}
-        <div className="flex justify-center max-w-6xl md:justify-end">
+        <div
+          className="flex justify-center max-w-6xl md:justify-end"
+          data-aos="fade-left"
+        >
           <img
             className="w-65 mr-0 max-w-sm md:max-w-md lg:max-w-lg"
             src={Image3}

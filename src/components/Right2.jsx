@@ -30,7 +30,7 @@ function Right2() {
   };
 
   return (
-    <div className="w-full max-w-2xl">
+    <div className="w-full max-w-2xl" data-aos="fade-left">
       {/* Title */}
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center lg:text-left">
         Frequently Asked Questions

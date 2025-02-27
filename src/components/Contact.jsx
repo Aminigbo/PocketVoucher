@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { Colors } from "./colors";
 
 function Contact() {
   return (
@@ -19,13 +20,22 @@ function Contact() {
         </div>
         <div className="flex space-x-5 mt-3 md:mt-0">
           <Link to="">
-            <FaFacebookSquare className="text-xl md:text-2xl text-red-500 hover:text-blue-500 transition" />
+            <FaFacebookSquare
+              style={{ color: Colors.primary }}
+              className="text-xl md:text-2xl transition hover:text-red-500"
+            />
           </Link>
           <Link to="">
-            <FaLinkedin className="text-xl md:text-2xl text-red-500 hover:text-blue-500 transition" />
+            <FaLinkedin
+              style={{ color: Colors.primary }}
+              className="text-xl md:text-2xl transition hover:text-red-500"
+            />
           </Link>
           <Link to="">
-            <FaSquareXTwitter className="text-xl md:text-2xl text-red-500 hover:text-blue-500 transition" />
+            <FaSquareXTwitter
+              style={{ color: Colors.primary }}
+              className="text-xl md:text-2xl hover:text-red-500 transition-colors duration-300"
+            />
           </Link>
         </div>
       </div>

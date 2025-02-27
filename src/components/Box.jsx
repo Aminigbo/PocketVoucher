@@ -1,32 +1,35 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import { PiSquaresFourBold } from "react-icons/pi";
-import { BsHandbagFill } from "react-icons/bs";
-import { HiDocumentCurrencyEuro } from "react-icons/hi2";
+import { MdCreateNewFolder } from "react-icons/md";
+import { BsCreditCard2BackFill } from "react-icons/bs";
+import { GiReceiveMoney } from "react-icons/gi";
 
 function Box() {
   const info = [
     {
-      icon: <PiSquaresFourBold className="text-4xl text-pink-600 "  />,
+      icon: <MdCreateNewFolder className="text-4xl text-pink-600 " />,
       title: "Create merchant Voucher",
       scribe:
         "Vouchers are created in simple steps to enhance payments to the merchant",
     },
     {
-      icon: <HiDocumentCurrencyEuro className="text-4xl text-gray-600 " />,
+      icon: <BsCreditCard2BackFill className="text-4xl text-gray-600 " />,
       title: "Virtual & Physical Cards",
       scribe:
         "Owning physical and virtual USD & NGN cards has never been this easy",
     },
     {
-      icon: <BsHandbagFill className="text-4xl text-green-500" />,
+      icon: <GiReceiveMoney className="text-4xl text-green-500" />,
       title: "Receive Fund",
-      scribe:
-        "Receive funds in your selected currency",
+      scribe: "Receive funds in your selected currency",
     },
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-20 p-6 mb-10">
+    <div
+      className="flex flex-wrap justify-center gap-20 p-6 mb-10"
+      data-aos="fade-up"
+    >
       {info.map((item, index) => (
         <div
           key={index}

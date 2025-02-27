@@ -1,12 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { IoHeart } from "react-icons/io5";
-import { FaUser } from "react-icons/fa6";
-import { IoMdLock } from "react-icons/io";
+import { FaUserCheck } from "react-icons/fa";
+import { SiAuthelia } from "react-icons/si";
+import { GiTakeMyMoney } from "react-icons/gi";
 
 function Left2() {
   return (
-    <div className="w-full max-w-2xl mx-auto px-6 md:px-10 lg:px-0 py-10">
+    <div
+      className="w-full max-w-2xl mx-auto px-6 md:px-10 lg:px-0 py-10"
+      data-aos="fade-right"
+    >
       <div className="text-center lg:text-left">
         <h1 className="text-3xl md:text-4xl font-bold text-cyan-950 mb-6">
           Three Step Payment
@@ -19,7 +22,7 @@ function Left2() {
       <div className="space-y-6">
         <div className="flex flex-col md:flex-row items-center bg-white p-6 md:p-8 rounded-lg shadow-md">
           <div className="bg-gray-100 p-4 md:p-5 rounded-full">
-            <IoHeart className="text-cyan-900 text-2xl md:text-3xl" />
+            <FaUserCheck className="text-cyan-900 text-2xl md:text-3xl" />
           </div>
           <div className="mt-4 md:mt-0 md:ml-4 text-center md:text-left">
             <h4 className="text-xl md:text-2xl font-semibold text-cyan-950">
@@ -33,7 +36,7 @@ function Left2() {
 
         <div className="flex flex-col md:flex-row items-center bg-white p-6 md:p-8 rounded-lg shadow-md">
           <div className="bg-green-100 p-4 md:p-5 rounded-full">
-            <FaUser className="text-green-700 text-2xl md:text-3xl" />
+            <GiTakeMyMoney className="text-green-700 text-2xl md:text-3xl" />
           </div>
           <div className="mt-4 md:mt-0 md:ml-4 text-center md:text-left">
             <h4 className="text-xl md:text-2xl font-semibold text-cyan-950">
@@ -47,7 +50,7 @@ function Left2() {
 
         <div className="flex flex-col md:flex-row items-center bg-white p-6 md:p-8 rounded-lg shadow-md">
           <div className="bg-gray-100 p-4 md:p-5 rounded-full">
-            <IoMdLock className="text-cyan-950 text-2xl md:text-3xl" />
+            <SiAuthelia className="text-cyan-950 text-2xl md:text-3xl" />
           </div>
           <div className="mt-4 md:mt-0 md:ml-4 text-center md:text-left">
             <h4 className="text-xl md:text-2xl font-semibold text-cyan-950">
