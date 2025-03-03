@@ -8,7 +8,7 @@ function HowItWorks({scrollRef}) {
     <div ref={scrollRef}>
       <header
         className="mt-10 text-center text-3xl text-cyan-950 font-bold mb-5"
-        data-aos="fade-up"
+        data-aos="fade-right"
       >
         WHAT MORE CAN I DO?
       </header>

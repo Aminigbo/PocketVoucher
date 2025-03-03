@@ -3,6 +3,7 @@ import React from "react";
 import { MdCreateNewFolder } from "react-icons/md";
 import { BsCreditCard2BackFill } from "react-icons/bs";
 import { GiReceiveMoney } from "react-icons/gi";
+import { Colors } from "./colors";
 
 function Box() {
   const info = [
@@ -13,7 +14,7 @@ function Box() {
         "Vouchers are created in simple steps to enhance payments to the merchant",
     },
     {
-      icon: <BsCreditCard2BackFill className="text-4xl text-gray-600 " />,
+      icon: <BsCreditCard2BackFill className="text-4xl text-blue-600 " />,
       title: "Virtual & Physical Cards",
       scribe:
         "Owning physical and virtual USD & NGN cards has never been this easy",
@@ -33,7 +34,7 @@ function Box() {
       {info.map((item, index) => (
         <div
           key={index}
-          className="bg-white p-6 shadow-sm flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2"
+          className={`bg-white p-6 shadow-sm flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2 hover:bg-[#2B110F]`}
         >
           <div className="mb-5 mt-5">{item.icon}</div>
           <h4 className="text-xl font-semibold text-cyan-950 mb-5">
