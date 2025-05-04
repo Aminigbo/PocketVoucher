@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Left from "../components/Left";
-import Image from "../assets/images/Group 11 (1).png";
+import Image from "../assets/images/new_images/3.png";
 
 function CurrencyConverter() {
   return (

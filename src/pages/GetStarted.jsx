@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Image from "../assets/images/modal-illustration.bfede9f5.svg";
 import Contact from "../components/Contact";
 import { FaCheckCircle } from "react-icons/fa";
-
+import { Colors } from "../components/colors";
 function GetStarted() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [progress, setProgress] = useState(100);
@@ -100,6 +100,7 @@ function GetStarted() {
               required
             />
             <button
+              style={{ backgroundColor: Colors.primary }}
               type="submit"
               className="w-52 bg-orange-400 text-white py-3 rounded-md font-semibold text-lg hover:bg-orange-500 transition"
             >

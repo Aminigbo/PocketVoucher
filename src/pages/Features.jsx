@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../assets/images/appstore.50df6f67.svg";
 import Image2 from "../assets/images/googleplay.bc4400ce.svg";
-import Image3 from "../assets/images/Screenshot 2025-02-20 at 10.55.15 1.png";
+import Image1 from "../assets/images/new_images/1.png";
 import { Colors } from "../components/colors";
 
 // eslint-disable-next-line react/prop-types
@@ -20,25 +20,24 @@ function Features({ scrollRef1 }) {
           className="text-center md:text-left space-y-6"
           data-aos="fade-right"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-950 leading-tight">
-            Connecting Africa Through Payment
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: Colors.primary }}>
+            Simplifying Payments through Vouchers tokens
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600">
-            Move, send, and receive money effortlessly, conduct business
-            seamlessly across Africa, and pay tuition fees globally—all within a
-            single, convenient platform.
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl" style={{ color: Colors.primary }}>
+            Create a voucher token that can be used as means of payment for products
+            and services. Share your voucher tokens with friends and spend.
           </p>
 
           {/* Store Buttons */}
           <div className="flex flex-wrap justify-center mt-10 md:justify-start gap-4 ">
-            <Link to="https://apps.apple.com/app/id6473445696">
+            <Link to="">
               <img
                 src={Image}
                 alt="App Store"
                 className="w-36 sm:w-40 hover:scale-105 transition-transform duration-300"
               />
             </Link>
-            <Link to="https://play.google.com/store/apps/details?id=com.monirates&pli=1">
+            <Link to="#">
               <img
                 src={Image2}
                 alt="Google Play"
@@ -55,7 +54,7 @@ function Features({ scrollRef1 }) {
         >
           <img
             className="w-65 mr-0 max-w-sm md:max-w-md lg:max-w-lg"
-            src={Image3}
+            src={Image1}
             alt="Payment Illustration"
           />
         </div>

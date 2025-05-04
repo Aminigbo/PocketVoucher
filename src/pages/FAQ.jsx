@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Image from "../assets/images/Screenshot 2025-02-20 at 10.27.11.png";
+import Image from "../assets/images/new_images/5.png";
 import Right2 from "../components/Right2";
 
 function FAQ() {

@@ -9,7 +9,7 @@ function Box() {
   const info = [
     {
       icon: <MdCreateNewFolder className="text-4xl text-pink-600 " />,
-      title: "Create merchant Voucher",
+      title: "Create payment Voucher",
       scribe:
         "Vouchers are created in simple steps to enhance payments to the merchant",
     },
@@ -34,8 +34,13 @@ function Box() {
       {info.map((item, index) => (
         <div
           key={index}
-          className={`bg-white p-6 shadow-sm flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2 hover:bg-[#2B110F]`}
+          className={`bg-white p-6 shadow-sm flex flex-col items-start text-left w-80 hover:scale-105 transition-transform border-t-2 hover:bg-[#2B110F] relative`}
         >
+          {index === 1 && (
+            <div className="absolute -top-3 -right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+              coming soon
+            </div>
+          )}
           <div className="mb-5 mt-5">{item.icon}</div>
           <h4 className="text-xl font-semibold text-cyan-950 mb-5">
             {item.title}

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Image from "../assets/images/Group 5975.png";
+import Image from "../assets/images/new_images/token.png";
 import Right from "../components/Right";
 import { Colors } from "../components/colors";
 

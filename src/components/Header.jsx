@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Image from "../assets/images/Vector.png";
+import Image from "../assets/images/new_images/logo3.png";
 import { Colors } from "./colors";
 import { Link } from "react-router-dom";
 

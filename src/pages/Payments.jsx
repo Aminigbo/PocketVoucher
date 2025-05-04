@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/images/Group 10.png";
+import Image from "../assets/images/new_images/2.png";
 import Left2 from "../components/Left2";
 
 function Payments() {

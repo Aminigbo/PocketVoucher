@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Icons for dropdown
+import { Colors } from "./colors";
 
 function Right2() {
   const faqs = [
@@ -17,7 +18,7 @@ function Right2() {
     {
       question: "Where can I redeem my Pocket Voucher?",
       answer:
-        "You can redeem your Pocket Voucher at all partnered stores listed in our app and website.",
+        "You can redeem your Pocket Voucher at all stores that accept payment vouchers.",
     },
   ];
 
@@ -32,7 +33,7 @@ function Right2() {
   return (
     <div className="w-full max-w-2xl" data-aos="fade-left">
       {/* Title */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center lg:text-left">
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center lg:text-left" style={{ color: Colors.primary }}>
         Frequently Asked Questions
       </h2>
 
