@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 function Foot() {
   return (
     <div>
-      <Trusted />
+      {/* <Trusted /> */}
       <Contact />
     </div>
   );
